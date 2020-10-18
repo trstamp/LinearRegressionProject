@@ -68,20 +68,11 @@ summary(fit.cement)
 summary(fit.cement2)
 
 #Best Model
-
-
-
 concrete_new <- read.csv("D:/DataSets/concrete.csv")
 head(concrete_new)
 
-
-
-
-
 fit.cement_new <- lm(strength~cement,data=concrete_new)
 fit.cement2_new <- lm(strength~cement+I(cement+I(cement^2)),data=concrete_new)
-
-
 
 plot(concrete_new$cement,concrete_new$strength)
 abline(fit.cement_new)
