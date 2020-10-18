@@ -1,11 +1,3 @@
-#Starcraft
-
-setwd("D:/DataSets")
-
-starcraft <- read.csv("D:/DataSets/SkillCraft1_Dataset.csv")
-
-head(starcraft)
-
 #Concrete
 
 setwd("D:/DataSets")
